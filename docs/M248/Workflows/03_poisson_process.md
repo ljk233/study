@@ -30,3 +30,8 @@ We are given some process that occurs in real time with a rate $\lambda$, and as
 1. **Rate of occurrence is linear.** Plot a scatterplot of Events against Time.
 2. **Number of events $\to$ Poisson distribution.** Plot a bar chart of Number of Events per Time Interval *(same time interval as rate).*
 3. **Waiting time between events $\to$ exponential distribution.** Plot a frequency histogram of Waiting Times.
+
+Also check that for the
+
+- **Number of events**: $E(X) = V(X)$ (see properties of the Poisson distribution)
+- **Waiting time between events**: $E(T) = S(T)$ (see properties of the exponential distribution)

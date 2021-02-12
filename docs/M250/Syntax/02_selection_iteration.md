@@ -1,8 +1,9 @@
 # Selection and Iteration
 
-## For
+## For loop
 
-General sysntax `for (iterator, condition, iterate iterator)`
+Syntax
+: `for (iterator, condition, iterate iterator)`
 
 ~~~java
 for (int k = 0; k < x; k++)
@@ -11,32 +12,33 @@ for (int k = 0; k < x; k++)
 }
 ~~~
 
-## For-each
+## For-each loop
 
 ~~~java
-
+// Book 3
 ~~~
 
-## If-else if-else
+## If selection
 
 ~~~java
 if (aVar < x)
 {
-    // if this, do that
+    // if this, then do that
 }
 else if (aVar < y)
 {
-    // else if something else, do that
+    // else if this, then do that
 }
 else
 {
-    // else do something 
+    // else do that
 }
 ~~~
 
-## While
+## While loop
 
-General sysntax `while (condition)`
+Syntax
+: `while (condition)`
 
 ~~~java
 while (aVar > x)
