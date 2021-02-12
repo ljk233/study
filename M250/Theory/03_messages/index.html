@@ -14,7 +14,7 @@
     
     
       
-        <title>03 messages - Deus Ex Statistica</title>
+        <title>Messages in Java - Deus Ex Statistica</title>
       
     
     
@@ -57,6 +57,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#messages-in-java" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -85,7 +90,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              03 messages
+              Messages in Java
             
           </span>
         </div>
@@ -515,11 +520,75 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Messages in Java
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        03 messages
+        Messages in Java
       </a>
       
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    Terminology
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getter-and-setter-messages" class="md-nav__link">
+    Getter and setter messages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_diagrams/" class="md-nav__link">
+        04 diagrams
+      </a>
     </li>
   
 
@@ -543,15 +612,128 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    Terminology
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getter-and-setter-messages" class="md-nav__link">
+    Getter and setter messages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>03 messages</h1>
-                
-                
+                <h1 id="messages-in-java">Messages in Java</h1>
+<p>A <strong>message</strong> is a request for an object to do something.
+The only way to make an object do something is to send it a message.
+The set of messages that an object can understand is set out in its protocol.
+The <em>behaviour</em> of an object is its response to the messages in its <em>protocol</em>.</p>
+<p>A message may:</p>
+<ol>
+<li>change the state of an object</li>
+<li>make an object do something without changing its state</li>
+<li>get back some useful information from an object</li>
+<li>cause an object to send a message to another object</li>
+<li>cause an object to send a message to itself</li>
+</ol>
+<h2 id="terminology">Terminology</h2>
+<dl>
+<dt><strong>Message answer</strong></dt>
+<dd>A message answer is an object's reply to a message.
+Not all messages elicit a message-answer (this can be checked by looking at the return type in the corresponding method signature).</dd>
+<dt><strong>Message expression</strong></dt>
+<dd>A message-send that evaluates to some value, i.e. the message returns a message answer.
+We also say that it <em>returns a value.</em></dd>
+<dt><strong>Message name</strong></dt>
+<dd>The name of a message, including the following parentheses, but excluding any arguments.</dd>
+<dt><strong>Message-send</strong></dt>
+<dd>The code that sends a message to an object.
+If a message requires no arguments, then the message-send is the same as the message name.</dd>
+</dl>
+<h2 id="arguments">Arguments</h2>
+<dl>
+<dt><strong>Actual arguments</strong></dt>
+<dd>An actual argument is a value used in a message that is copied to a formal argument for use inside the corresponding method.
+Actual arguments must be of a compatible type with their corresponding formal arguments.</dd>
+<dt><strong>Formal arguments</strong></dt>
+<dd>A typed identifier used in a method signature between parentheses to stand for a value (an actual argument) that is passed into the method body by a message.
+This is the argument used when implementing the method.</dd>
+</dl>
+<h2 id="getter-and-setter-messages">Getter and setter messages</h2>
+<p>It is common for the protocol of an object to include a pair of message that either return or set the value of an attribute.</p>
+<dl>
+<dt><strong>Getter message</strong></dt>
+<dd>A message that returns as its message answer the value of one of the receiver’s attributes.</dd>
+<dt><strong>Setter message</strong></dt>
+<dd>A message that sets the value of one of a receiver’s attributes.</dd>
+</dl>
+<h2 id="example">Example</h2>
+<p>If a method was implemented as follows</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="p">(</span><span class="n">String</span> <span class="n">aName</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// do something</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<p>Then</p>
+<ul>
+<li>There would be no message answer, as the return type is <code>void</code></li>
+<li>This is not a message expression, because the message returns to no answer</li>
+<li>Its message name would be <code>setName()</code></li>
+<li>A message send would be <code>anOject.setName("Joe Bloggs")</code></li>
+</ul>
+<p>The formal argument of the method would be <code>aName</code>.
+An actual argument could be <code>"Joe Bloggs"</code>.</p>
                 
               
               
@@ -584,6 +766,20 @@
             </div>
           </a>
         
+        
+          <a href="../04_diagrams/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                04 diagrams
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
         
       </nav>
     </div>
