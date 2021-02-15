@@ -18,7 +18,7 @@ We are given some process that occurs in real time with a rate $\lambda$, and as
 **Workflow:**
 
 1. **Formalise the rate.** Pay attention to the *unit of time.*
-2. **Parse the probability.** Express it in terms involving of $F(t)$. Use $T \sim M(\lambda)$ (do not use $\lambda t$).
+2. **Parse the probability.** Express it in terms involving $F(t)$. Use $T \sim M(\lambda)$ (do not use $\lambda t$).
 3. **Solve.**
 
 ## Confirming the Poisson process is a good model

@@ -1,3 +1,5 @@
-# Contingency Tables
+# Probability
+
+## Using contingency tables
 
 **To be added.**

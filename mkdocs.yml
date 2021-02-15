@@ -5,6 +5,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
+    - toc.integrate
 
 markdown_extensions:
   - def_list
@@ -14,6 +15,8 @@ markdown_extensions:
       linenums: true
   - pymdownx.superfences
   - admonition
+  - toc:
+      toc_depth: 2
 
 extra_javascript:
   - javascripts/config.js

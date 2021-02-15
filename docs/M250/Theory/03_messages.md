@@ -2,8 +2,8 @@
 
 A **message** is a request for an object to do something.
 The only way to make an object do something is to send it a message.
-The set of messages that an object can understand is set out in its protocol.
-The *behaviour* of an object is its response to the messages in its *protocol*.
+The set of messages that an object can understand is set out in its **protocol**.
+The **behaviour** of an object is its response to the messages in its protocol.
 
 A message may:
 
@@ -17,7 +17,8 @@ A message may:
 
 **Message answer**
 : A message answer is an object's reply to a message.
-Not all messages elicit a message-answer (this can be checked by looking at the return type in the corresponding method signature).
+Not all messages elicit a message-answer
+A method with specified return type of `void` will not return a message answer.
 
 **Message expression**
 : A message-send that evaluates to some value, i.e. the message returns a message answer.
@@ -64,7 +65,7 @@ public void setName(String aName)
 Then
 
 - There would be no message answer, as the return type is `void`
-- This is not a message expression, because the message returns to no answer
+- This is not a message expression, because the message returns no answer
 - Its message name would be `setName()`
 - A message send would be `anOject.setName("Joe Bloggs")`
 
