@@ -206,7 +206,9 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="Deus Ex Statistica" class="md-nav__button md-logo" aria-label="Deus Ex Statistica">
       
@@ -313,7 +315,7 @@
   
     <li class="md-nav__item">
       <a href="../../../M248/Workflows/01_probability/" class="md-nav__link">
-        Contingency Tables
+        Probability
       </a>
     </li>
   
@@ -545,26 +547,6 @@
     Attributes
   </a>
   
-    <nav class="md-nav" aria-label="Attributes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#attributes-and-instance-variables" class="md-nav__link">
-    Attributes and instance variables
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#attributes-and-state" class="md-nav__link">
-    Attributes and state
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -600,7 +582,7 @@
   
     <li class="md-nav__item">
       <a href="../04_diagrams/" class="md-nav__link">
-        04 diagrams
+        Diagrams in Object-orientated programming
       </a>
     </li>
   
@@ -625,71 +607,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objects" class="md-nav__link">
-    Objects
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attributes" class="md-nav__link">
-    Attributes
-  </a>
-  
-    <nav class="md-nav" aria-label="Attributes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#attributes-and-instance-variables" class="md-nav__link">
-    Attributes and instance variables
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#attributes-and-state" class="md-nav__link">
-    Attributes and state
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#keywords" class="md-nav__link">
-    Keywords
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -700,7 +617,7 @@
 <h2 id="objects">Objects</h2>
 <p><strong>A general description of an object and its relationship with its class.</strong></p>
 <h2 id="attributes">Attributes</h2>
-<h3 id="attributes-and-instance-variables">Attributes and instance variables</h3>
+<h3>Attributes and instance variables</h3>
 <p>It is common that there is one-to-one relationship between an attribute and some instance variable, but it is not neccessarily the case.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -708,7 +625,7 @@
 But a person also has another attribute: <strong>full name,</strong> which we would not implement in this case, instead we would write a getter method <code>getFullName</code> that would return both the <code>fName</code> and <code>lName</code> instance variables.</p>
 <p>That way, if we wish to change how a person's full name is represented, we would only need to change the one method.</p>
 </div>
-<h3 id="attributes-and-state">Attributes and state</h3>
+<h3>Attributes and state</h3>
 <p>Reference: <em>U01, SAQ 2</em></p>
 <p>Attributes describe the kind of information that can be determined about an object.
 The state of an object is the particular data held by all the attributes at a given time.</p>
@@ -800,7 +717,7 @@ The state of an object can vary over time as the values of its attributes change
       <script>
         app = initialize({
           base: "../../..",
-          features: ['navigation.tabs', 'navigation.tabs.sticky', 'navigation.sections'],
+          features: ['navigation.tabs', 'navigation.tabs.sticky', 'navigation.sections', 'toc.integrate'],
           search: Object.assign({
             worker: "../../../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)

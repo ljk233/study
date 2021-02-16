@@ -206,7 +206,9 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="Deus Ex Statistica" class="md-nav__button md-logo" aria-label="Deus Ex Statistica">
       
@@ -313,7 +315,7 @@
   
     <li class="md-nav__item">
       <a href="../../../M248/Workflows/01_probability/" class="md-nav__link">
-        Contingency Tables
+        Probability
       </a>
     </li>
   
@@ -587,7 +589,7 @@
   
     <li class="md-nav__item">
       <a href="../04_diagrams/" class="md-nav__link">
-        04 diagrams
+        Diagrams in Object-orientated programming
       </a>
     </li>
   
@@ -611,58 +613,6 @@
                 </div>
               </div>
             
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#abstraction" class="md-nav__link">
-    Abstraction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#encapsulation" class="md-nav__link">
-    Encapsulation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#inheritance" class="md-nav__link">
-    Inheritance
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#polymorphism" class="md-nav__link">
-    Polymorphism
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
             
           
           <div class="md-content">
@@ -752,7 +702,7 @@ Data hiding is the principle of only providing access to <code>private</code> in
       <script>
         app = initialize({
           base: "../../..",
-          features: ['navigation.tabs', 'navigation.tabs.sticky', 'navigation.sections'],
+          features: ['navigation.tabs', 'navigation.tabs.sticky', 'navigation.sections', 'toc.integrate'],
           search: Object.assign({
             worker: "../../../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)

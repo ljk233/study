@@ -206,7 +206,9 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="Deus Ex Statistica" class="md-nav__button md-logo" aria-label="Deus Ex Statistica">
       
@@ -313,7 +315,7 @@
   
     <li class="md-nav__item">
       <a href="../../../M248/Workflows/01_probability/" class="md-nav__link">
-        Contingency Tables
+        Probability
       </a>
     </li>
   
@@ -493,26 +495,6 @@
     Methods
   </a>
   
-    <nav class="md-nav" aria-label="Methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#get-methods" class="md-nav__link">
-    Get methods
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#set-methods" class="md-nav__link">
-    Set methods
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -607,7 +589,7 @@
   
     <li class="md-nav__item">
       <a href="../../Theory/04_diagrams/" class="md-nav__link">
-        04 diagrams
+        Diagrams in Object-orientated programming
       </a>
     </li>
   
@@ -631,78 +613,6 @@
                 </div>
               </div>
             
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#class-header" class="md-nav__link">
-    Class header
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#class-and-instance-variables" class="md-nav__link">
-    Class and instance variables
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constructors" class="md-nav__link">
-    Constructors
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    Methods
-  </a>
-  
-    <nav class="md-nav" aria-label="Methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#get-methods" class="md-nav__link">
-    Get methods
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#set-methods" class="md-nav__link">
-    Set methods
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
             
           
           <div class="md-content">
@@ -785,7 +695,7 @@
 </code></pre></div>
 </td></tr></table>
 <h2 id="methods">Methods</h2>
-<h3 id="get-methods">Get methods</h3>
+<h3>Get methods</h3>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -817,7 +727,7 @@
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<h3 id="set-methods">Set methods</h3>
+<h3>Set methods</h3>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -921,7 +831,7 @@
       <script>
         app = initialize({
           base: "../../..",
-          features: ['navigation.tabs', 'navigation.tabs.sticky', 'navigation.sections'],
+          features: ['navigation.tabs', 'navigation.tabs.sticky', 'navigation.sections', 'toc.integrate'],
           search: Object.assign({
             worker: "../../../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)

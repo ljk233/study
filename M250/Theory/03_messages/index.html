@@ -206,7 +206,9 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="Deus Ex Statistica" class="md-nav__button md-logo" aria-label="Deus Ex Statistica">
       
@@ -313,7 +315,7 @@
   
     <li class="md-nav__item">
       <a href="../../../M248/Workflows/01_probability/" class="md-nav__link">
-        Contingency Tables
+        Probability
       </a>
     </li>
   
@@ -587,7 +589,7 @@
   
     <li class="md-nav__item">
       <a href="../04_diagrams/" class="md-nav__link">
-        04 diagrams
+        Diagrams in Object-orientated programming
       </a>
     </li>
   
@@ -612,58 +614,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#terminology" class="md-nav__link">
-    Terminology
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arguments" class="md-nav__link">
-    Arguments
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getter-and-setter-messages" class="md-nav__link">
-    Getter and setter messages
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -673,8 +623,8 @@
                 <h1 id="messages-in-java">Messages in Java</h1>
 <p>A <strong>message</strong> is a request for an object to do something.
 The only way to make an object do something is to send it a message.
-The set of messages that an object can understand is set out in its protocol.
-The <em>behaviour</em> of an object is its response to the messages in its <em>protocol</em>.</p>
+The set of messages that an object can understand is set out in its <strong>protocol</strong>.
+The <strong>behaviour</strong> of an object is its response to the messages in its protocol.</p>
 <p>A message may:</p>
 <ol>
 <li>change the state of an object</li>
@@ -687,7 +637,8 @@ The <em>behaviour</em> of an object is its response to the messages in its <em>p
 <dl>
 <dt><strong>Message answer</strong></dt>
 <dd>A message answer is an object's reply to a message.
-Not all messages elicit a message-answer (this can be checked by looking at the return type in the corresponding method signature).</dd>
+Not all messages elicit a message-answer
+A method with specified return type of <code>void</code> will not return a message answer.</dd>
 <dt><strong>Message expression</strong></dt>
 <dd>A message-send that evaluates to some value, i.e. the message returns a message answer.
 We also say that it <em>returns a value.</em></dd>
@@ -728,7 +679,7 @@ This is the argument used when implementing the method.</dd>
 <p>Then</p>
 <ul>
 <li>There would be no message answer, as the return type is <code>void</code></li>
-<li>This is not a message expression, because the message returns to no answer</li>
+<li>This is not a message expression, because the message returns no answer</li>
 <li>Its message name would be <code>setName()</code></li>
 <li>A message send would be <code>anOject.setName("Joe Bloggs")</code></li>
 </ul>
@@ -773,7 +724,7 @@ An actual argument could be <code>"Joe Bloggs"</code>.</p>
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                04 diagrams
+                Diagrams in Object-orientated programming
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -806,7 +757,7 @@ An actual argument could be <code>"Joe Bloggs"</code>.</p>
       <script>
         app = initialize({
           base: "../../..",
-          features: ['navigation.tabs', 'navigation.tabs.sticky', 'navigation.sections'],
+          features: ['navigation.tabs', 'navigation.tabs.sticky', 'navigation.sections', 'toc.integrate'],
           search: Object.assign({
             worker: "../../../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)
